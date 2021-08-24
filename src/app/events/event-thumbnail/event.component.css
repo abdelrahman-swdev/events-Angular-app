@@ -1,0 +1,11 @@
+.thumbnail{
+    min-height: 210px !important;
+}
+
+.pad-left{
+    margin-left: 10px;
+}
+
+.well div{
+    color: #bbb;
+}

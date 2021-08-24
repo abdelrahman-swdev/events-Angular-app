@@ -1,0 +1,10 @@
+<div class="votingWidgetContainer">
+    <div class="well votingWidget">
+        <div class="votingButton">
+            <i (click)="onClick()" style="margin-top: 4px;" [ngClass]="{'red':voted === true}" class="glyphicon glyphicon-heart"></i>
+        </div>
+        <div class="bagdge badge-inverse votingCount">
+            <div style="margin-left: 5px;">{{count}}</div>
+        </div>
+    </div>
+</div>

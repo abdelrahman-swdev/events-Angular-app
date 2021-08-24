@@ -1,0 +1,33 @@
+.votingWidgetContainer {
+}
+
+.votingWidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 39px;
+  padding: 0;
+  border-radius: 21px;
+}
+
+.votingButton {
+  cursor: pointer;
+}
+
+.votingButton i {
+  color: white;
+}
+
+.badge-inverse {
+  color: #fff;
+  background-color: #4e5d6c;
+}
+
+.votingCount {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+i.red{
+  color: red !important;
+}

@@ -1,0 +1,17 @@
+<div class="well hoverwell thumbnail">
+    <h2>{{ event?.name |uppercase }}</h2>
+    <div>Date: {{ event?.date |date:'y/M/d'}}</div>
+    <div [ngSwitch]="event?.time">
+        Time: {{ event?.time }}
+        <span *ngSwitchCase="'8:00 am'">(Early Start)</span>
+        <span *ngSwitchCase="'9:00 am'">(Normal Start)</span>
+        <span *ngSwitchCase="'10:00 am'">(Late Start)</span>
+    </div>
+    <div>Price: {{ event?.price |currency:'USD' }}</div>
+    <div *ngIf="event?.location">
+        <span>Location: {{ event?.location?.address }}</span>
+    </div>
+    <div *ngIf="event?.onlineUrl">
+        <span>online url: </span><span>{{ event?.onlineUrl }}</span>
+    </div>
+</div>

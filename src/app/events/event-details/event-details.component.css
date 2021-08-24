@@ -1,0 +1,13 @@
+.container{
+    padding: 0 20px;
+}
+
+.event-img{
+    height: 100px;
+}
+.filters-container{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+}

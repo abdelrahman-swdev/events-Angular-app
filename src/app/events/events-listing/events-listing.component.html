@@ -1,0 +1,10 @@
+<div>
+    <h1>Up Comming Events</h1>
+    <hr />
+    <div class="row">
+        <div [routerLink]="['/events', e.id]" class="col-md-5" *ngFor="let e of events">
+            <app-event [event]="e"></app-event> 
+        </div>
+    </div>
+</div>
+
